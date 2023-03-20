@@ -1,4 +1,4 @@
-body,header,footer,.action,.links,.awesome,.rightPart,.fourImages{
+header,footer,.action,.links,.awesome,.rightPart,.fourImages{
     display:flex;
 }
 header,.action,.links,.rightPart,.fourImages,footer{
@@ -9,7 +9,6 @@ header,.awesome,.quote,.information{
     padding-left: 10%;
 }
 body{
-    flex-direction: column;
     box-sizing: border-box;
     margin:0;
 }
@@ -30,8 +29,8 @@ header{
     width: 100%;
 }
 .action{
-    margin:5%;
-    padding:2%;
+    margin:5% 10%;
+    padding: 10px 10px;
     gap:10px;
     justify-content: space-around;
 }
@@ -40,7 +39,7 @@ header{
 
 
 
-.rightPart,.fourImages,footer{
+.rightPart,.fourImages,footer,.awesome{
     justify-content: center;
 }
 .fourImages{
@@ -48,6 +47,7 @@ header{
 }
 footer{
     height: 100px;
+    width: 100%;
 }
 
 header,.awesome,footer{
@@ -84,13 +84,11 @@ button{
 img,.action{
     border-radius: 10px;
 }
-figcaption{
+figcaption,img{
     width:140px;
 }
-
 img{
     height: 140px;
-    width: 140px;
 }
 
 
@@ -132,4 +130,5 @@ blockquote{
 .action p{
     font-size: 20px;
     font-weight: 100;
+    margin-top: 0;
 }
