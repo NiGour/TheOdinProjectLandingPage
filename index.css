@@ -2,30 +2,60 @@ body{
     display: flex;
     flex-direction: column;
 }
-.awesome{
+header{
     display: flex;
-    width: auto;
-    padding: 5%;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding:0 10%;
+    height:50px
 }
-.leftPart,.rightPart{
-    width: 100%;
-}
-.rightPart{
+footer{
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+
+.action{
+    display: flex;
+    margin:5%;
+    padding:5%;
+    gap:10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.action p{
+    font-size: 20px;
+    font-weight: 100;
+  
+}
+.links{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+.awesome{
+    display: flex;
+    width: auto;
+    padding: 5% 10%;
+}
+.leftPart,.rightPart{
+    width: 100%;
+}
+.rightPart,.fourImages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .information{
+    padding:0 10%;
     text-align: center;
 }
-.fourImages{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-figcaption{
-    width:140px;
-}
+
 
 header,.awesome,footer{
     background-color: rgb(56, 61, 104);
@@ -33,30 +63,39 @@ header,.awesome,footer{
 header,.awesome,button,.action,footer{
     color: white;
 }
-
+img,.action,button{
+    border-color: rgb(38, 114, 255);
+    border-style: solid;
+    border-width: 1px;
+}
+.action,button{
+    background-color: rgb(38, 114, 255);
+}
 
 .quote{
     background-color: rgb(206, 227, 255);
+    padding:10%;
 }
 .rightPart{
     background-color: rgb(148, 166, 189);
-
 }
+
 img,.action{
-    border-color: rgb(11, 97, 255);
-    border-style: solid;
-    border-width: 1px;
     border-radius: 10px;
 }
+figcaption{
+    width:140px;
+}
 button{
-    border-style: solid;
-    border-width: 1px;
     border-radius: 5px;
+    width: 100px;
+    padding: 5px;
+}
+.action button{
+    border-color: white;
 }
 
-.action,button{
-    background-color: rgb(11, 97, 255);
-}
+
 img{
     height: 140px;
     width: 140px;
@@ -64,10 +103,14 @@ img{
 
 
 /*font*/
-h1{
-    font-style: bold;
-}
 blockquote{
+    font-size:30px;
     font-style: italic;
-    text-align: center;
+    text-align: left;
+    font-weight: 100;
+}
+.quote p{
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
 }
