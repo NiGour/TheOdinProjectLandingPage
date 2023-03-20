@@ -1,8 +1,17 @@
-header,.awesome{
+header,.awesome,footer{
     background-color: rgb(56, 61, 104);
 }
+header,.awesome,button,.action,footer{
+    color: white;
+}
+
+
 .quote{
     background-color: rgb(206, 227, 255);
+}
+.rightPart{
+    background-color: rgb(148, 166, 189);
+
 }
 img,.action{
     border-color: rgb(11, 97, 255);
@@ -10,10 +19,26 @@ img,.action{
     border-width: 1px;
     border-radius: 10px;
 }
-.action{
+button{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.action,button{
     background-color: rgb(11, 97, 255);
 }
 img{
     height: 100px;
     width: 100px;
+}
+
+
+/*font*/
+h1{
+    font-style: bold;
+}
+blockquote{
+    font-style: italic;
+    text-align: center;
 }
