@@ -1,3 +1,32 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+.awesome{
+    display: flex;
+    width: auto;
+    padding: 5%;
+}
+.leftPart,.rightPart{
+    width: 100%;
+}
+.rightPart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.information{
+    text-align: center;
+}
+.fourImages{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+figcaption{
+    width:140px;
+}
+
 header,.awesome,footer{
     background-color: rgb(56, 61, 104);
 }
@@ -29,8 +58,8 @@ button{
     background-color: rgb(11, 97, 255);
 }
 img{
-    height: 100px;
-    width: 100px;
+    height: 140px;
+    width: 140px;
 }
 
 
