@@ -1,61 +1,55 @@
+body,header,footer,.action,.links,.awesome,.rightPart,.fourImages{
+    display:flex;
+}
+header,.action,.links,.rightPart,.fourImages,footer{
+    align-items: center;
+}
 body{
-    display: flex;
     flex-direction: column;
 }
 header{
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     box-sizing: border-box;
     padding:0 10%;
     height:50px
 }
-footer{
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.awesome{
+    width: auto;
+    padding: 5% 10%;
 }
 
-
 .action{
-    display: flex;
     margin:5%;
     padding:5%;
     gap:10px;
     justify-content: space-around;
-    align-items: center;
 }
 
 .action p{
     font-size: 20px;
     font-weight: 100;
-  
+    
 }
 .links{
-    display: flex;
-    align-items: center;
     gap:5px;
 }
-.awesome{
-    display: flex;
-    width: auto;
-    padding: 5% 10%;
-}
+
 .leftPart,.rightPart{
     width: 100%;
-}
-.rightPart,.fourImages{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 .information{
     padding:0 10%;
     text-align: center;
 }
+.rightPart,.fourImages{
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
+footer{
+    height: 100px;
+    justify-content: center;
+}
 
 header,.awesome,footer{
     background-color: rgb(56, 61, 104);
@@ -94,8 +88,6 @@ button{
 .action button{
     border-color: white;
 }
-
-
 img{
     height: 140px;
     width: 140px;
