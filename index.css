@@ -15,7 +15,9 @@ body{
 header{
     justify-content: space-between;
     box-sizing: border-box;
-    height:50px
+    height:50px;
+    position:fixed;
+    width:100%;
 }
 .links{
     gap:5px;
@@ -24,12 +26,35 @@ header{
     width: auto;
     padding-top: 5%;
     padding-bottom: 5%;
+    gap: 5%;
+}
+.awesome h1{
+    margin: 0;
+}
+.awesome p{
+    margin-top: 0;
 }
 .leftPart,.rightPart{
     width: 100%;
 }
+.information{
+    text-align: center;
+    padding-bottom: 4%;
+}
+.quote{
+    background-color: rgb(206, 227, 255);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+blockquote{
+    margin-bottom: 0;
+}
+.quote p{
+    margin-top: 0;
+}
 .action{
-    margin:5% 10%;
+    margin:5% 10% 200px 10%;
+    margin-bottom: ;
     padding: 10px 10px;
     gap:10px;
     justify-content: space-around;
@@ -48,6 +73,8 @@ header{
 footer{
     height: 100px;
     width: 100%;
+    position: fixed;
+    bottom: 0;
 }
 
 header,.awesome,footer{
@@ -72,11 +99,7 @@ button{
 .action button{
     border-color: white;
 }
-.quote{
-    background-color: rgb(206, 227, 255);
-    padding-top: 10%;
-    padding-bottom: 10%;
-}
+
 .rightPart{
     background-color: rgb(148, 166, 189);
 }
@@ -106,9 +129,6 @@ header .links{
     font-weight: 800px;
     color: #f9faf8;
 }
-.information{
-    text-align: center;
-}
 .information h1,blockquote,.quote p{
     color:#1f2937;
 }
@@ -131,4 +151,5 @@ blockquote{
     font-size: 20px;
     font-weight: 100;
     margin-top: 0;
+    margin-bottom: 0;
 }
